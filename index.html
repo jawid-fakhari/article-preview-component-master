@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- container  ----------------------------------------------------->
+  <div class="container">
+    <!-- drawer iamge -------------------->
+    <div class="furniture-image">
+      <img src="images/drawers.jpg" alt="">
+    </div>
+    <!-- text container ------------------------->
+    <div class="text-content">
+      <!-- header ------------->
+      <div class="header">
+        <h2>Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</h2>
+      </div>
+      <!-- content ----------------------->
+      <div class="content">
+        <p>Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+      </div>
+    </div>
+    <!-- profile sahare section  -------------->
+    <div class="profile-share-sections">
+        <!-- profile section ----------------->  
+      <div class="profile-section main-wrap">
+        <div class="profile">
+          <div class="content-profile">
+            <div class="profile-image center">
+              <img src="images/avatar-michelle.jpg" alt="">
+            </div>
+            <div class="id-info center">
+              <p class="name header">Michelle Appleton</p>
+              <p class="date content">28 Jun 2020</p>
+            </div>
+            <div class="icon-share-wrap center" onclick="myFunction()">
+              <div class="icon-share">
+                <img src="images/icon-share.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!-- share section  -------------->
+      <div class="share-section-main-wrap" id="myDIV">
+        <div class="share-section profile">
+          <div class="share-wrap content-profile">
+            <div class="share content">
+              <span>Share</span>
+            </div>
+            <div class="icons">
+              <img src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="icons">
+              <img src="images/icon-twitter.svg" alt="">
+            </div>
+            <div class="icons">
+              <img src="images/icon-pinterest.svg" alt="">
+            </div>
+            <div id="share-none" class="icon-share-wrap content" onclick="myFunction()">
+              <div class="icon-share">
+                <img src="images/icon-share.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- footer ------------------------->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="www.linkedin.com/in/jawid-fakhari">Ahmad Jawid Fakhari</a>.
+  </div>
+  <!-- js script  ---------------------------------------->
+  <script type="text/javascript" src="master.js"></script>
+</body>
+
+</html>

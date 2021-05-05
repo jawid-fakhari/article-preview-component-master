@@ -1,0 +1,134 @@
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+}
+/* container ************************/
+.container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 0; margin: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  position: relative;
+}
+/* drawer image  *********/
+.furniture-image img {  
+  width: 100%;
+  padding-bottom: 30px;
+}
+/* text container  ***************/
+.text-content { 
+  padding: 0 30px;
+}
+.header {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+.content {
+  color: hsl(214, 17%, 51%);
+}
+/* profile sahare section **************/
+.profile-share-sections {
+  margin-top: 30px;
+}
+/* profile section    Questa sezione deve alternarsi con la sezione share **************/
+.profile {
+  height: 80px;
+  display: flex;
+}
+.content-profile {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  width: 100%;
+  margin: 0 30px;
+}
+.profile-image img {
+  border-radius: 100%;
+  width: 50px;
+  margin-right: 20px;
+}
+.id-info p {
+  line-height: 0.1;
+}
+.icon-share-wrap {
+  background-color: hsl(210, 46%, 95%);
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: auto;
+}
+.icon-share {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* share section Questa sezione deve alternarsi con la sezione share **************/
+.share-section-main-wrap {
+  position: relative;
+  z-index: 1;
+  margin-top: -80px;
+}
+.share-section {
+  background-color: hsl(217, 19%, 35%);
+}
+.share-wrap {
+  margin: 0 30px;
+}
+.share {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  margin-right: 20px;
+}
+.icons {
+  margin-right: 10px;
+}
+/* footer *******************/
+.attribution {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+}
+/* media query *********************/
+@media (min-width: 555px) {
+  .container {
+    width: 750px; height: 300px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    'drawer drawer text text text'
+    'drawer drawer profile profile profile';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: unset;
+  }
+  .furniture-image img {
+    grid-area: drawer;
+    position: absolute;
+    padding: 0; margin: 0;
+    width: 300px; height: 300px;
+    border-radius: 20px 0 0 20px;
+  }
+  .text-content {
+    grid-area: text;
+  }
+  .profile-share-sections {
+    grid-area: profile;
+  }
+  .share-section-main-wrap {
+    top: -3rem; left: 15rem;
+    height: 80px;
+  }
+  .share-section {
+    width: 250px;  height: 40px;
+    margin-left: auto;
+    border-radius: 10px;
+    margin: 0; padding: 0;
+  }
+  #share-none {
+    display: none;
+  }
+} 
